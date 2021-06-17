@@ -1,0 +1,125 @@
+.main-box {
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    min-height: 400px;
+}
+
+.main-content-container {
+    text-align: center;
+    margin: 0;
+    height: 35vh;
+    padding-top: 35vh;
+}
+
+.media-link-container {
+    text-align: center;
+    padding: 0;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom: 2vh;
+    margin-left:auto;
+    margin-right:auto;
+}
+.instagram-icon:hover {
+    cursor: pointer;
+    fill: rebeccapurple;
+    transition: 0.5s;
+}
+
+.facebook-icon:hover {
+    fill: #1877F2;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.linkedin-icon:hover {
+    fill: #0a66c2;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.h1 {
+    color: #21211f;
+    font-size: 7.35rem;
+    letter-spacing: -0.1rem;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.h2 {
+    color: #21211f;
+    font-size: 1.75rem;
+    letter-spacing: -0.1rem;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.menu-main-btn {
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    font-family: "Impact", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: 300;
+    background: #e22a25;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.5s ease;
+    margin: 5px 0 0 5px;
+}
+
+.menu-main-btn:hover {
+    transition: 0.5s;
+    background: #21211f;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .h1 {
+        font-size: 5.35rem;
+    }
+
+    .h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .h1 {
+        font-size: 4.35rem;
+    }
+
+    .h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 2.35rem;
+    }
+
+    .h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-height: 400px) {
+
+    .main-content-container {
+        position:absolute;
+        top: 0;
+        margin-left:auto;
+        margin-right:auto;
+        height: 10vh;
+        padding-top: 15vh;
+    }
+}
