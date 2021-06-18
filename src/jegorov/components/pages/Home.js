@@ -32,7 +32,7 @@ class Home extends Component {
     render() {
         return (
             <Box className={"main-box"} >
-                <Box className={"main-content-container"} center>
+                <Box className={"main-content-container"} style={{height:"92vh"}}>
                     <Box className={"h1"}>Jegor Jegorov</Box>
                     <Box className={"h2"}>Software engineer</Box>
                     <Box className={"main-btn-group"}>
@@ -41,7 +41,7 @@ class Home extends Component {
                              onClick={() => this.openSendEmailView("contact@jegorov.eu", "from jegorov.eu")}>Contact</Box>
                     </Box>
                 </Box>
-                <Box className={"media-link-container"}>
+                <Box className={"media-link-container"} style={{height:"6vh", paddingBottom: "2vh"}}>
                     <FacebookIcon fontSize={'large'} className={"facebook-icon"}
                                   onClick={() => this.openLink(this.facebookUrl)}/>
                     <LinkedInIcon style={{marginLeft: "10px"}} fontSize={'large'} className={"linkedin-icon"}

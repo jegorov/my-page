@@ -7,20 +7,16 @@
 
 .main-content-container {
     text-align: center;
-    margin: 0;
-    height: 35vh;
-    padding-top: 35vh;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    bottom: 0;
 }
 
 .media-link-container {
-    text-align: center;
-    padding: 0;
-    position:absolute;
-    left:0;
-    right:0;
-    bottom: 2vh;
-    margin-left:auto;
-    margin-right:auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 .instagram-icon:hover {
     cursor: pointer;
@@ -109,17 +105,6 @@
 
     .h2 {
         font-size: 1rem;
-    }
-}
-
-@media (max-height: 400px) {
-
-    .main-content-container {
-        position:absolute;
-        top: 0;
-        margin-left:auto;
-        margin-right:auto;
-        height: 10vh;
-        padding-top: 15vh;
+        letter-spacing: -0.05rem;
     }
 }
