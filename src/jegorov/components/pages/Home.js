@@ -34,7 +34,7 @@ class Home extends Component {
             <Box className={"main-box"} >
                 <Box className={"main-content-container"} style={{height:"92vh"}}>
                     <Box className={"h1"}>Jegor Jegorov</Box>
-                    <Box className={"h2"}>Software engineer</Box>
+                    <Box className={"h2"} style={{marginTop:"1vh"}}>Software engineer</Box>
                     <Box className={"main-btn-group"}>
                         <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}>Resume</Box>
                         <Box className={"menu-main-btn"}

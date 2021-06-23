@@ -1,0 +1,27 @@
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+.company-title{
+    color: #21211f;
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.job-title{
+    color: #21211f;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.additional-information-title{
+
+}

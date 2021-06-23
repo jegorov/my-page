@@ -1,0 +1,52 @@
+.inside-main-box {
+
+    background-color: #F6F6F6;
+    box-sizing: border-box;
+    position: relative;
+    height: 25rem;
+    display: flex;
+    width: 100vw ;
+    float: right;
+
+}
+
+.brief-description-block {
+    box-sizing: border-box;
+    position: relative;
+    width: 100vw ;
+    float: left;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-box {
+    display: flex;
+}
+
+.title-box{
+    position: relative;
+    left: 0;
+    right: 0;
+    background: rgb(38,38,47);
+    background: linear-gradient(90deg, rgba(38,38,47,1) 0%, rgba(160,182,186,1) 100%);
+    color: white;
+    font-size: 20px;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: 900;
+    padding: 1% 0 1% 10% ;
+}
+
+.main-resume-container {
+    height: 100%;
+    position: relative;
+    overflow:auto;
+}
+
+.image-box {
+
+    height: calc(1280px / 3 - 10%);
+    width: calc(960px / 3);
+}
