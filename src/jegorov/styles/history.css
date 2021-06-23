@@ -25,3 +25,16 @@
 .additional-information-title{
 
 }
+
+.history-box {
+    margin: 1% 0 1% 1%;
+}
+
+
+.history-description {
+    margin: 0 0 0 1%;
+}
+
+.web-url{
+    cursor: pointer;
+}

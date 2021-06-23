@@ -1,28 +1,31 @@
 import React, {Component} from "react";
-import {Box, CardMedia} from "@material-ui/core";
-import "../../styles/job-history.css"
+import {Box, CardMedia, Link} from "@material-ui/core";
+import "../../styles/history.css"
 
-class JobHistory extends Component {
+class AdditionalCerts extends Component {
 
     constructor(props) {
         super(props);
         // this.imgSrc=props
     }
 
+    openLink = (link) => {
+        window.open(`https://${link}`, "_self")
+    }
+
     render() {
         return (
-            <Box >
+            <Box className={"history-box"}>
                 <Box style={{display: "flex"}}>
                     <CardMedia className={"icon"} image={this.props.imgSrc}/>
-                    <Box>
-                        <Box className={"company-title"}>{this.props.companyName}</Box>
-                        <Box className={"job-title"}>Software Engineer</Box>
-                        <Box className={"additional-information-title"}>March, 2021 - Present</Box>
-                        <Box className={"additional-information-title"}>{this.props.location}</Box>
+                    <Box className={"history-description"}>
+                        <Box className={"company-title"}>{this.props.universityName}</Box>
+                        <Box className={"study"}>{this.props.study}</Box>
+                        <Box className={"additional-information-title"}>{this.props.years}</Box>
                     </Box>
                 </Box>
                 <Box>
-                    DESC
+                    {this.props.desc}
                 </Box>
 
             </Box>
@@ -31,4 +34,4 @@ class JobHistory extends Component {
     }
 }
 
-export default JobHistory;
+export default AdditionalCerts;
