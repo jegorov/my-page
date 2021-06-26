@@ -64,24 +64,6 @@
     font-weight: 350;
 }
 
-.skills-box h2{
-    background-color: #d2d7d2;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-    font-style: normal;
-    font-weight: 350;
-}
-
-.skills-box h3{
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-    font-style: normal;
-    font-weight: 350;
-
-}
-
 .menu-main-btn {
     text-align: center;
     display: inline-block;
@@ -103,6 +85,15 @@
     transition: 0.5s;
     background: #21211f;
     cursor: pointer;
+}
+
+@media (max-width: 1320px) {
+
+
+    .h1 {
+        font-size: 5.35rem;
+    }
+
 }
 
 @media (max-width: 800px) {

@@ -1,13 +1,10 @@
 .inside-main-box {
 
-    background-color: #F6F6F6;
     box-sizing: border-box;
     position: relative;
-    height: 25rem;
     display: flex;
     width: 100vw ;
     float: right;
-
 }
 
 .brief-description-block {
@@ -23,7 +20,9 @@
 }
 
 .header-box {
-    display: flex;
+    margin-top: 10px;
+    display:flex;
+    background-color: #F6F6F6;
 }
 
 .title-box{
@@ -44,10 +43,95 @@
     height: 100%;
     position: relative;
     overflow:auto;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.image-box {
+    height: 100%;
+}
+.image {
+    height: 25rem;
+    width: 60%;
+    margin:auto;
+    min-width: 350px;
+
 }
 
-.image-box {
+.skills-box h2{
+    background-color: #d2d7d2;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: 350;
+}
 
-    height: calc(1280px / 3 - 10%);
-    width: calc(960px / 3);
+.skills-box h3{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: 350;
+
+}
+
+@media (max-width: 1320px) {
+
+    .image {
+        height: 400px;
+        width: 100px;
+        min-width: 250px;
+
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .header-box {
+        display:flex;
+        flex-direction: column;
+        background-color: unset;
+
+    }
+
+    .brief-description-block {
+        box-sizing: border-box;
+        width: 100vw ;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .main-resume-container {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    .image {
+        margin-top: 5px;
+        height: 400px;
+        width: 100%;
+        max-width: 350px;
+        min-width: unset;
+    }
+
+    .h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .h2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 200px) {
+
+    .image {
+        margin-top: 5px;
+        height: 200px;
+        width: 100%;
+        max-width: 350px;
+        min-width: unset;
+    }
 }

@@ -1,10 +1,17 @@
 
+.flex-box{
+    display:flex;
+}
 .icon {
     height: 50px;
     width: 50px;
+    max-width:50px;
+    min-width: 50px;
+    max-height:50px;
+    min-height: 50px;
 }
 
-.company-title{
+.history-name{
     color: #21211f;
     font-size: 1rem;
     letter-spacing: 0rem;
@@ -13,7 +20,7 @@
     font-weight: 900;
 }
 
-.job-title{
+.history-title{
     color: #21211f;
     font-size: 0.9rem;
     letter-spacing: 0.05rem;
@@ -37,4 +44,18 @@
 
 .web-url{
     cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .history-name{
+        font-size: 0.9rem;
+        letter-spacing: 0rem;
+        font-weight: 900;
+    }
+
+    .history-title{
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+        font-weight: 500;
+    }
 }

@@ -24,9 +24,7 @@ import skills from "../../../resources/text/skills.md";
 
 
 
-import JobHistory from "../elements/JobHistory";
-import UniversityHistory from "../elements/UniversityHistory";
-import AdditionalCerts from "../elements/AdditionalCerts";
+import History from "../elements/History";
 import ReactMarkdown from "react-markdown";
 
 
@@ -58,18 +56,19 @@ class Resume extends Component {
         return (
             <Box className={"main-box"}>
 
-                <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}>Home</Box>
-                {/*<Box className={"menu-main-btn"} onClick={() => this.openResumePage()}>Download</Box>*/}
 
-                <Container className={"main-resume-container "}>
+                <Box className={"main-resume-container"}>
+                    <Box className={"menu-main-btn"}  onClick={() => this.openResumePage()}>Home</Box>
+                    {/*<Box className={"menu-main-btn"} onClick={() => this.openResumePage()}>Download</Box>*/}
+
                     <Box className={"header-box"}>
                         <Box  className={"brief-description-block "} style={{zIndex: "4"}}>
-                            <Box className={"h1"} fontSize={"4rem"}>
+                            <Box className={"h1"} >
                             Jegor Jegorov
                             </Box>
                             <br/>
-                            <Box className={"h1"} fontSize={"2rem"}>
-                            Software Developer
+                            <Box className={"h2"} >
+                            Software Engineer
                             </Box>
                             <br/>
                             <Box className={"h3"}>
@@ -77,52 +76,51 @@ class Resume extends Component {
                             </Box>
                         </Box>
                         <Box className={"inside-main-box"} style={{zIndex: "5"}}>
-                            <Box className={"image-box"}>
-                                <CardMedia style={{height: "90%", width: "100%", marginLeft:"40%", marginTop:"10%"}} image={photoImgUrl}/>
-                            </Box>
+                            {/*<Box className={"image-box"}>*/}
+                                <CardMedia className={"image"} image={photoImgUrl}/>
+                            {/*</Box>*/}
                         </Box>
                     </Box>
+                    <br/>
                     <Box style={{height: "100%", position: "relative"}}>
                         <Box className={"title-box"}>
                             Work Experience
                         </Box>
-                        <JobHistory imgSrc={hrImgUrl} companyName={"HireRight"} location={"Tallinn, Estonia"}
-                                    years={"March, 2021 - Present"} webUrl={"hireright.com"} desc={hrDescMd}/>
-                        <JobHistory imgSrc={sberImgUrl} companyName={"Sberbank Technology"} location={"Moscow, Russia"}
-                                    years={"July, 2018 - February, 2021"} webUrl={"sberbank.com"} desc={sberDescMd}/>
-                        <JobHistory imgSrc={gridnineImgUrl} companyName={"Gridnine Systems"} location={"Moscow, Russia"}
-                                    years={"January, 2018 - July, 2018"} webUrl={"gridnine.com"} desc={gridnineDescMd}/>
+                        <History imgSrc={hrImgUrl} name={"HireRight"} title={"Software Engineer"} location={"Tallinn, Estonia"}
+                                 years={"March, 2021 - Present"} webUrl={"hireright.com"} desc={hrDescMd}/>
+                        <History imgSrc={sberImgUrl} name={"Sberbank Technology"} title={"Software Engineer"}  location={"Moscow, Russia"}
+                                 years={"July, 2018 - February, 2021"} webUrl={"sberbank.com"} desc={sberDescMd}/>
+                        <History imgSrc={gridnineImgUrl} name={"Gridnine Systems"} title={"Software Engineer"}  location={"Moscow, Russia"}
+                                 years={"January, 2018 - July, 2018"} webUrl={"gridnine.com"} desc={gridnineDescMd}/>
 
                         <Box className={"title-box"}>
                             Education
                         </Box>
-                        <UniversityHistory imgSrc={bonchImgUrl}
-                                           universityName={"The Bonch-Bruevich Saint Petersburg State University of Telecommunications"}
-                                           study={"Bachelor's degree,Information Technology,"}
-                                           location={"Saint-Petersburg, Russia"} years={"2013 - 2017"}
-                                           webUrl={"sut.ru/eng"}/>
+                        <History imgSrc={bonchImgUrl}
+                                 name={"The Bonch-Bruevich Saint Petersburg State University of Telecommunications"}
+                                 title={"Bachelor's degree,Information Technology"}
+                                 location={"Saint-Petersburg, Russia"} years={"2013 - 2017"}
+                                 webUrl={"sut.ru/eng"}/>
                         <Box className={"title-box"}>
                             Additional Certificates
                         </Box>
-                        <AdditionalCerts imgSrc={bonchImgUrl}
-                                         universityName={"The Bonch-Bruevich Saint Petersburg State University of Telecommunications"}
-                                         study={"Training: Translation And Interpretation SPBSUT (Eng-Rus)"}
-                                         location={"Saint-Petersburg, Russia"} years={"2014-2017"}
-                                         webUrl={"sut.ru/eng"}/>
-                        <AdditionalCerts imgSrc={redhatImgUrl}
-                                         universityName={"RedHat"}
-                                         study={"Introduction to Containers, Kubernetes, and Red Hat OpenShift (DO180)"}
-                                         years={"2019"}
-                                         webUrl={"sut.ru/eng"}/>
+                        <History imgSrc={bonchImgUrl}
+                                 name={"The Bonch-Bruevich Saint Petersburg State University of Telecommunications"}
+                                 title={"Training: Translation And Interpretation SPBSUT (Eng-Rus)"}
+                                         location={"Saint-Petersburg, Russia"} years={"2014-2017"}/>
+                        <History imgSrc={redhatImgUrl}
+                                 name={"RedHat"}
+                                 title={"Introduction to Containers, Kubernetes, and Red Hat OpenShift (DO180)"}
+                                         years={"2019"}/>
                         <Box className={"title-box"}>
                             Skills
                         </Box>
                         <Box className={"skills-box"}>
                             <ReactMarkdown>{this.state.skills && this.state.skills }</ReactMarkdown>
                         </Box>
+                        <br/>
                     </Box>
-                </Container>
-
+                </Box>
             </Box>
         )
     }
