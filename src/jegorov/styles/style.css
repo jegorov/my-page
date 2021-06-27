@@ -28,9 +28,13 @@
     fill: #1877F2;
     transition: 0.5s;
     cursor: pointer;
-
 }
 
+.twitter-icon:hover {
+    fill: rgb(26, 145, 218);
+    transition: 0.5s;
+    cursor: pointer;
+}
 .linkedin-icon:hover {
     fill: #0a66c2;
     cursor: pointer;

@@ -58,14 +58,16 @@ class Resume extends Component {
     }
 
     render() {
+        let isIos = ['iPhone', 'iPod','iPad'].includes(window.navigator.platform);
+        let iosPadding = isIos ? "20vh":"5vh";
+        let isDownloadBtnVisible = !(['Android', 'BlackBerry'].includes(window.navigator.platform) || isIos);
         return (
             <Box className={"main-box"}>
 
 
-                <Box className={"main-resume-container"}>
+                <Box className={"main-resume-container"} style={{paddingBottom: iosPadding}}>
                     <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}>Home</Box>
-                    <Box className={"menu-main-btn"} onClick={() => this.handleExportWithComponent()}>Download</Box>
-
+                    {isDownloadBtnVisible ? <Box className={"menu-main-btn"} onClick={() => this.handleExportWithComponent()}>Download</Box> : null}
                     <PDFExport id={"resume_container"} margin={5}  fileName={"resume_jegorov.pdf"} ref={this.pdfExportComponent} paperSize={"A3"}>
                         <Box className={"header-box"}>
                             <Box className={"brief-description-block "} style={{zIndex: "4"}}>
@@ -128,7 +130,7 @@ class Resume extends Component {
                             <Box className={"skills-box"}>
                                 <ReactMarkdown>{this.state.skills && this.state.skills}</ReactMarkdown>
                             </Box>
-                            <br/>
+                            <Box style={{height: iosPadding}}/>
                         </Box>
                     </PDFExport>
                 </Box>
