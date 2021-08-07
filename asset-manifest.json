@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/my-page/static/css/main.e65d4aed.chunk.css",
+    "main.js": "/my-page/static/js/main.7b360f9a.chunk.js",
+    "main.js.map": "/my-page/static/js/main.7b360f9a.chunk.js.map",
+    "runtime-main.js": "/my-page/static/js/runtime-main.51b8b998.js",
+    "runtime-main.js.map": "/my-page/static/js/runtime-main.51b8b998.js.map",
+    "static/js/2.ca3746e6.chunk.js": "/my-page/static/js/2.ca3746e6.chunk.js",
+    "static/js/2.ca3746e6.chunk.js.map": "/my-page/static/js/2.ca3746e6.chunk.js.map",
+    "index.html": "/my-page/index.html",
+    "static/css/main.e65d4aed.chunk.css.map": "/my-page/static/css/main.e65d4aed.chunk.css.map",
+    "static/js/2.ca3746e6.chunk.js.LICENSE.txt": "/my-page/static/js/2.ca3746e6.chunk.js.LICENSE.txt",
+    "static/media/brief_description.45bff27b.md": "/my-page/static/media/brief_description.45bff27b.md",
+    "static/media/gridnine.c3217f1f.webp": "/my-page/static/media/gridnine.c3217f1f.webp",
+    "static/media/gridnine_desc.83fbe1ab.md": "/my-page/static/media/gridnine_desc.83fbe1ab.md",
+    "static/media/hr_desc.31d6cfe0.md": "/my-page/static/media/hr_desc.31d6cfe0.md",
+    "static/media/jegorov_main.0d3f4431.jpg": "/my-page/static/media/jegorov_main.0d3f4431.jpg",
+    "static/media/sber.df80ced6.png": "/my-page/static/media/sber.df80ced6.png",
+    "static/media/sber_desc.e583a1b1.md": "/my-page/static/media/sber_desc.e583a1b1.md",
+    "static/media/skills.d3d3e654.md": "/my-page/static/media/skills.d3d3e654.md"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.51b8b998.js",
+    "static/js/2.ca3746e6.chunk.js",
+    "static/css/main.e65d4aed.chunk.css",
+    "static/js/main.7b360f9a.chunk.js"
+  ]
+}
