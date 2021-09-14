@@ -2,7 +2,7 @@
   "name": "my-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jegorov.github.io/my-page",
+  "homepage": "https://jegorov.eu/",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@progress/kendo-react-pdf": "^4.7.0",
