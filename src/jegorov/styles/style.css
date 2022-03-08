@@ -5,6 +5,16 @@
     min-height: 400px;
 }
 
+.custom-bg {
+    background: linear-gradient(to bottom, #005BBB 50%, #FFD500 50%) !important; 
+}
+
+.custom-text {
+    color: #fff !important; 
+    text-shadow: -1px 0 #21211f, 0 1px #21211f, 1px 0 #21211f, 0 -1px #21211f !important;
+}
+
+
 .main-content-container {
     text-align: center;
     justify-content: center;
@@ -66,6 +76,7 @@
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
     font-style: normal;
     font-weight: 350;
+    padding: 1%;
 }
 
 .menu-main-btn {

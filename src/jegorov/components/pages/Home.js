@@ -36,10 +36,10 @@ class Home extends Component {
         let iosPadding = window.navigator.platform === 'iPhone' ? "80vh":"92vh";
 
         return (
-            <Box className={"main-box"} style={{marginBottom: iosPadding}} >
+            <Box className={"main-box custom-bg"} style={{marginBottom: iosPadding}} >
                 <Box className={"main-content-container"} style={{height:iosPadding}}>
-                    <Box className={"h1"}>Jegor Jegorov</Box>
-                    <Box className={"h2"} style={{marginTop:"1vh"}}>Software engineer</Box>
+                    <Box className={"h1 custom-text"}>Jegor Jegorov</Box>
+                    <Box className={"h2 custom-text"} style={{marginTop:"1vh"}}>Software engineer</Box>
                     <Box className={"main-btn-group"}>
                         <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}>Resume</Box>
                         <Box className={"menu-main-btn"}
