@@ -15,7 +15,7 @@ class App extends Component {
 
     render() {
         return (
-            <Router history={history}>
+            <Router basename={process.env.PUBLIC_URL} history={history}>
                 <Switch>
                     <Route exact path={"/"} component={Home}/>
                     <Route path={"/resume"} component={Resume}/>
