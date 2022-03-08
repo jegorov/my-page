@@ -20,3 +20,16 @@ The build is minified and the filenames include the hashes.\
 ####build docker image
 `docker build -t jegorovje/my-page-nginx:tag .`
 
+### `Git Hub Pages`
+
+`npm run deploy`
+
+#### If there are errors acquired 
+
+##### Cleaning Cache and Node_module are not enough. Follow this steps:
+
+`npm cache clean --force`
+`delete node_modules folder`
+`delete package-lock.json file`
+`npm install`
+
