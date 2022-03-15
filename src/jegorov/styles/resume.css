@@ -109,6 +109,12 @@
         padding-right: unset;
     }
 
+    .btn-panel {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+
     .image {
         margin-top: 5px;
         height: 400px;
