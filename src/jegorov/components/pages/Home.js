@@ -1,8 +1,9 @@
-import {Box, Container} from "@material-ui/core";
+import {Box} from "@material-ui/core";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import TelegramIcon from '@material-ui/icons/Telegram';
 import React, {Component} from 'react';
 
 import '../../styles/style.css';
@@ -16,8 +17,7 @@ class Home extends Component {
         this.instagramUrl = "https://www.instagram.com/jegorovje/"
         this.linkedinUrl = "https://www.linkedin.com/in/egor-egorov/"
         this.twitterUrl = "https://twitter.com/jegorovje"
-
-
+        this.telegramUrl = "https://t.me/jegorov_eu"
     }
 
     openLink = (link) => {
@@ -41,9 +41,9 @@ class Home extends Component {
                     <Box className={"h1 custom-text"}>Jegor Jegorov</Box>
                     <Box className={"h2 custom-text"} style={{marginTop:"1vh"}}>Software engineer</Box>
                     <Box className={"main-btn-group"}>
-                        <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}>Resume</Box>
+                        <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}><span class="btn-lbl">Resume</span></Box>
                         <Box className={"menu-main-btn"}
-                             onClick={() => this.openSendEmailView("contact@jegorov.eu", "from jegorov.eu")}>Contact</Box>
+                             onClick={() => this.openSendEmailView("contact@jegorov.eu", "from jegorov.eu")}><span class="btn-lbl">Contact</span></Box>
                     </Box>
                 </Box>
                 <Box className={"media-link-container"}>
@@ -55,6 +55,8 @@ class Home extends Component {
                                    className={"instagram-icon"} onClick={() => this.openLink(this.instagramUrl)}/>
                     <TwitterIcon style={{marginLeft: "10px"}} fontSize={'large'}
                                    className={"twitter-icon"} onClick={() => this.openLink(this.twitterUrl)}/>
+                    <TelegramIcon style={{marginLeft: "10px"}} fontSize={'large'}
+                                   className={"telegram-icon"} onClick={() => this.openLink(this.telegramUrl)}/>
                 </Box>
             </Box>
         );

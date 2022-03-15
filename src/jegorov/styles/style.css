@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Impacto;
+    font-weight: bold;
+    src: url(data:font/ttf;base64,AAEAAAAXAQ...);
+  }
+  
 .main-box {
     background: white;
     width: 100vw;
@@ -6,12 +12,12 @@
 }
 
 .custom-bg {
-    background: linear-gradient(to bottom, #005BBB 50%, #FFD500 50%) !important; 
+    /* background: linear-gradient(to bottom, #005BBB 50%, #FFD500 50%) !important;  */
 }
 
 .custom-text {
-    color: #fff !important; 
-    text-shadow: -1px 0 #21211f, 0 1px #21211f, 1px 0 #21211f, 0 -1px #21211f !important;
+    /* color: #fff !important;  */
+    /* text-shadow: -1px 0 #21211f, 0 1px #21211f, 1px 0 #21211f, 0 -1px #21211f !important; */
 }
 
 
@@ -51,6 +57,12 @@
     transition: 0.5s;
 }
 
+.telegram-icon:hover {
+    fill: #229ED9;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
 .h1 {
     color: #21211f;
     font-size: 7.35rem;
@@ -79,20 +91,23 @@
 }
 
 .menu-main-btn {
-    text-align: center;
     display: inline-block;
-    width: 80px;
-    font-family: "Impact", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    width: 120px;
+    font-family: Impacto, Impact, sans-serif;
     font-style: normal;
     font-weight: 300;
     background: #e22a25;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.5rem;    
+    transition: all 0.5s ease;
+    margin: 5px 0 0 5px;
+    text-align: center;
+}
+
+.btn-lbl {
     font-size: 0.9rem;
     letter-spacing: 0.25rem;
     text-transform: uppercase;
     color: #fff;
-    transition: all 0.5s ease;
-    margin: 5px 0 0 5px;
 }
 
 .menu-main-btn:hover {

@@ -66,8 +66,8 @@ class Resume extends Component {
 
 
                 <Box className={"main-resume-container"} style={{paddingBottom: iosPadding}}>
-                    <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}>Home</Box>
-                    {isDownloadBtnVisible ? <Box className={"menu-main-btn"} onClick={() => this.handleExportWithComponent()}>Download</Box> : null}
+                    <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}><span class="btn-lbl">Home</span></Box>
+                    {isDownloadBtnVisible ? <Box className={"menu-main-btn"} onClick={() => this.handleExportWithComponent()}><span class="btn-lbl">Download</span></Box> : null}
                     <PDFExport id={"resume_container"} margin={5}  fileName={"resume_jegorov.pdf"} ref={this.pdfExportComponent} paperSize={"A3"}>
                         <Box className={"header-box"}>
                             <Box className={"brief-description-block "} style={{zIndex: "4"}}>
