@@ -77,6 +77,12 @@
 
 }
 
+.btn-panel {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
 @media (max-width: 1320px) {
 
     .image {
@@ -107,12 +113,6 @@
     .main-resume-container {
         padding-left: unset;
         padding-right: unset;
-    }
-
-    .btn-panel {
-        justify-content: center;
-        display: flex;
-        width: 100%;
     }
 
     .image {
