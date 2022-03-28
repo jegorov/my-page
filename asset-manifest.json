@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.344190a6.chunk.css",
-    "main.js": "/static/js/main.df512c05.chunk.js",
-    "main.js.map": "/static/js/main.df512c05.chunk.js.map",
+    "main.js": "/static/js/main.785926ff.chunk.js",
+    "main.js.map": "/static/js/main.785926ff.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3fc92d11.js",
     "runtime-main.js.map": "/static/js/runtime-main.3fc92d11.js.map",
-    "static/js/2.0900779b.chunk.js": "/static/js/2.0900779b.chunk.js",
-    "static/js/2.0900779b.chunk.js.map": "/static/js/2.0900779b.chunk.js.map",
+    "static/js/2.82c45945.chunk.js": "/static/js/2.82c45945.chunk.js",
+    "static/js/2.82c45945.chunk.js.map": "/static/js/2.82c45945.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.344190a6.chunk.css.map": "/static/css/main.344190a6.chunk.css.map",
-    "static/js/2.0900779b.chunk.js.LICENSE.txt": "/static/js/2.0900779b.chunk.js.LICENSE.txt",
+    "static/js/2.82c45945.chunk.js.LICENSE.txt": "/static/js/2.82c45945.chunk.js.LICENSE.txt",
     "static/media/brief_description.45bff27b.md": "/static/media/brief_description.45bff27b.md",
     "static/media/gridnine.c3217f1f.webp": "/static/media/gridnine.c3217f1f.webp",
     "static/media/gridnine_desc.44d16925.md": "/static/media/gridnine_desc.44d16925.md",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3fc92d11.js",
-    "static/js/2.0900779b.chunk.js",
+    "static/js/2.82c45945.chunk.js",
     "static/css/main.344190a6.chunk.css",
-    "static/js/main.df512c05.chunk.js"
+    "static/js/main.785926ff.chunk.js"
   ]
 }
