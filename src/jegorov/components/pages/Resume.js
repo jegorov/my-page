@@ -1,5 +1,5 @@
-import React, { Component, useRef } from "react";
-import { Avatar, Box, CardMedia, Container, Divider, Grid, Typography } from "@material-ui/core";
+import React, { Component } from "react";
+import { Box, CardMedia } from "@material-ui/core";
 
 
 import '../../styles/style.css';
@@ -24,7 +24,7 @@ import skills from "../../../resources/text/skills.md";
 
 import History from "../elements/History";
 import ReactMarkdown from "react-markdown";
-import { PDFExport, savePDF } from '@progress/kendo-react-pdf';
+import { PDFExport } from '@progress/kendo-react-pdf';
 
 
 
@@ -66,8 +66,8 @@ class Resume extends Component {
 
                 <Box className={"main-resume-container"} style={{ paddingBottom: iosPadding }}>
                     <Box className={"btn-panel"}>
-                        <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}><span class="btn-lbl">Home</span></Box>
-                        {isDownloadBtnVisible ? <Box className={"menu-main-btn"} onClick={() => this.handleExportWithComponent()}><span class="btn-lbl">Download</span></Box> : null}
+                        <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}><span className="btn-lbl">Home</span></Box>
+                        {isDownloadBtnVisible ? <Box className={"menu-main-btn"} onClick={() => this.handleExportWithComponent()}><span className="btn-lbl">Download</span></Box> : null}
                     </Box>
                     <PDFExport id={"resume_container"} margin={5} fileName={"resume_jegorov.pdf"} ref={this.pdfExportComponent} paperSize={"A3"}>
 

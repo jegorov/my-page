@@ -29,13 +29,33 @@
     font-weight: 500;
 }
 
-.additional-information-title{
-
+.mobile-li li{
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+.mobile-li li:before {
+    content: "∘ ";
 }
 
 .history-box {
     margin: 1% 0 1% 1%;
 }
+
+.history-box:after {
+    content: " ";
+    clear:both;
+    display:block;
+    padding-top: 10px;
+    }
+
+    .history-box h2{
+        background-color: #d2d7d2;
+        font-weight: normal;
+    }
+    
+    .history-box h3{
+        font-weight: normal;
+    }
 
 
 .history-description {

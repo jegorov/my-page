@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Box, CardMedia, Link, Typography} from "@material-ui/core";
+import {Box, CardMedia, Link} from "@material-ui/core";
 import "../../styles/history.css"
 import ReactMarkdown from 'react-markdown'
 
@@ -23,9 +23,20 @@ class History extends Component {
     openLink = (link) => {
         window.open(`https://${link}`, "_self")
     }
+  
+    isMobile = () => {
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            // true for mobile device
+            return true;
+          }else{
+            // false for not mobile device
+            return false;
+          }
 
+    }
 
     render() {
+        
         return (
             <Box className={"history-box"}>
                 <Box className={"flex-box"}>
@@ -41,7 +52,7 @@ class History extends Component {
                 </Box>
                 <br/>
                 <Box>
-                    <ReactMarkdown>{this.state.data}</ReactMarkdown>
+                    {this.isMobile() ? <ReactMarkdown className="mobile-li">{this.state.data}</ReactMarkdown> : <ReactMarkdown>{this.state.data}</ReactMarkdown> }
                 </Box>
 
             </Box>

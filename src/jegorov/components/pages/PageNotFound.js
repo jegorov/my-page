@@ -7,7 +7,7 @@ class PageNotFound extends Component {
     render() {
 
         return (
-            <a>
+            <div>
                 <header className="top-header">
                 </header>
 
@@ -37,7 +37,7 @@ class PageNotFound extends Component {
                     </div>
                 </section>
 
-            </a>
+            </div>
         )
     }
 }
