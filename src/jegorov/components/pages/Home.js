@@ -41,9 +41,9 @@ class Home extends Component {
                     <Box className={"h1 custom-text"}>Jegor Jegorov</Box>
                     <Box className={"h2 custom-text"} style={{marginTop:"1vh"}}>Software engineer</Box>
                     <Box className={"main-btn-group"}>
-                        <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}><span class="btn-lbl">Resume</span></Box>
+                        <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}><span className="btn-lbl">Resume</span></Box>
                         <Box className={"menu-main-btn"}
-                             onClick={() => this.openSendEmailView("contact@jegorov.eu", "from jegorov.eu")}><span class="btn-lbl">Contact</span></Box>
+                             onClick={() => this.openSendEmailView("contact@jegorov.eu", "from jegorov.eu")}><span className="btn-lbl">Contact</span></Box>
                     </Box>
                 </Box>
                 <Box className={"media-link-container"}>
