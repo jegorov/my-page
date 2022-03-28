@@ -24,7 +24,6 @@ import skills from "../../../resources/text/skills.md";
 
 import History from "../elements/History";
 import ReactMarkdown from "react-markdown";
-import { PDFExport } from '@progress/kendo-react-pdf';
 
 
 
@@ -46,30 +45,31 @@ class Resume extends Component {
     constructor() {
         super();
         this.state = {}
-        this.pdfExportComponent = React.createRef();
+        // this.pdfExportComponent = React.createRef();
     }
 
     openResumePage = () => {
         history.push("/")
     }
 
-    handleExportWithComponent = (event) => {
-        this.pdfExportComponent.current.save();
-    }
+    // handleExportWithComponent = (event) => {
+    //     this.pdfExportComponent.current.save();
+    // }
 
     render() {
         let isIos = ['iPhone', 'iPod', 'iPad'].includes(window.navigator.platform);
         let iosPadding = isIos ? "20vh" : "5vh";
         let isDownloadBtnVisible = !(['Android', 'BlackBerry'].includes(window.navigator.platform) || isIos);
+        // let isDownloadBtnVisible = false;
         return (
             <Box className={"main-box"}>
 
                 <Box className={"main-resume-container"} style={{ paddingBottom: iosPadding }}>
                     <Box className={"btn-panel"}>
                         <Box className={"menu-main-btn"} onClick={() => this.openResumePage()}><span className="btn-lbl">Home</span></Box>
-                        {isDownloadBtnVisible ? <Box className={"menu-main-btn"} onClick={() => this.handleExportWithComponent()}><span className="btn-lbl">Download</span></Box> : null}
+                        {/* {isDownloadBtnVisible ? <Box className={"menu-main-btn"} onClick={() => this.handleExportWithComponent()}><span className="btn-lbl">Download</span></Box> : null} */}
                     </Box>
-                    <PDFExport id={"resume_container"} margin={5} fileName={"resume_jegorov.pdf"} ref={this.pdfExportComponent} paperSize={"A3"}>
+                    {/* <PDFExport id={"resume_container"} margin={5} fileName={"resume_jegorov.pdf"} ref={this.pdfExportComponent} paperSize={"A3"}> */}
 
                         <Box className={"header-box"}>
                             <Box className={"brief-description-block "} style={{ zIndex: "4" }}>
@@ -134,7 +134,7 @@ class Resume extends Component {
                             </Box>
                             <Box style={{ height: iosPadding }} />
                         </Box>
-                    </PDFExport>
+                    {/* </PDFExport> */}
                 </Box>
             </Box>
         )
